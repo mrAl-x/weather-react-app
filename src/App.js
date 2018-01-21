@@ -4,6 +4,9 @@ import { getWeatherData } from './shared/utils/helpers';
 // Components
 import InputText from './shared/components/input-text/InputText'
 import WeekForecast from './shared/components/week-forecast/WeekForecast'
+import madeByMeSvg from './shared/media/svg/madebyme.svg'
+// Styles
+import styles from './App.css';
 
 class App extends Component {
 	constructor() {
@@ -19,9 +22,14 @@ class App extends Component {
 
 	render() {
 		return (
-			<div className="App">
-				<header className="App-header">
-					<h1>Weather App</h1>
+			<div className={ styles['Weather'] }>
+				<header className={ styles['Weather_header'] }>
+					<address>
+						<a href="https://twitter.com/@mrAL_x"
+							rel="author">
+							<img src={ madeByMeSvg } alt="Made by @mrAl_x"/>
+						</a>
+					</address>
 				</header>
 				<main>
 					<InputText />

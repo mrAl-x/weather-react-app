@@ -186,6 +186,8 @@ module.exports = {
                       flexbox: 'no-2009',
                     }),
                     require('postcss-nested'),
+                    // Apply plugin
+                    require('postcss-apply'),
                     // Let postcss parse @import statements
                     require('postcss-import')({
                       // Any non-relative imports are resolved to this path

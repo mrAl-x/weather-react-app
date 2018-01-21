@@ -1,0 +1,23 @@
+:root {
+	/* ====================== */
+	/* Colors */
+	/* ====================== */
+	--light-yellow: #FFFBD7;
+	--yellow: #F4D4A0;
+	--orange: #ED7863;
+	--purple: #39285E;
+	--black: #2C2327;
+
+	/* ====================== */
+	/* Containers */
+	/* ====================== */
+	--fullSizedContainer: 1280px;
+
+	/* ====================== */
+	/* Breakpoints */
+	/* ====================== */
+	--layout-xs: 375px;
+	--layout-sm: 768px;
+	--layout-md: 1024px;
+	--layout-lg: 1280px;
+}
