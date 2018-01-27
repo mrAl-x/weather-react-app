@@ -2,11 +2,18 @@
 	/* ====================== */
 	/* Colors */
 	/* ====================== */
+	--white: #FFF;
 	--light-yellow: #FFFBD7;
 	--yellow: #F4D4A0;
 	--orange: #ED7863;
 	--purple: #39285E;
 	--black: #2C2327;
+
+	--retro-yellow: #E6BE50;
+	--retro-orange: #D44626;
+	--retro-red: #C92921;
+	--retro-pink: #991E39;
+	--retro-purple: #571735;
 
 	/* ====================== */
 	/* Containers */

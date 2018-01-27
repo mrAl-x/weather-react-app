@@ -1,0 +1,56 @@
+@import 'shared/styles/variables.css';
+
+.wallpaper {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+.whiteStripesWrapper {
+	position: absolute;
+	width: 140px;
+	height: 100%;
+	left: 25%;
+	display: flex;
+	justify-content: space-between;
+
+	.whiteStripe {
+		width: 60px;
+		height: 100%;
+		background-color: var(--white);
+	}
+}
+
+.retroRainbowWrapper {
+	position: absolute;
+	bottom: -70px;
+	left: -10px;
+	width: 270px;
+	height: 390px;
+	display: flex;
+	transform: rotate(-45deg);
+
+	.retroStripe {
+		width: 30px;
+		height: 100%;
+
+		&:nth-child(1) {
+			background-color: var(--retro-yellow);
+		}
+		&:nth-child(2) {
+			background-color: var(--retro-orange);
+		}
+		&:nth-child(3) {
+			background-color: var(--retro-red);
+		}
+		&:nth-child(4) {
+			background-color: var(--retro-pink);
+		}
+		&:nth-child(5) {
+			background-color: var(--retro-purple);
+		}
+	}
+}

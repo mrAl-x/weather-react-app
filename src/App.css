@@ -1,16 +1,44 @@
-@import 'reset-css/reset.css';
+@import './shared/styles/reset.css';
+@import './shared/styles/fonts.css';
 @import './shared/styles/variables.css';
 
-:root {
+body {
 	background-color: var(--light-yellow);
+	font-family: "aemstel_regular", sans-serif;
 }
 
-.Weather {
+.weather {
 	max-width: var(--fullSizedContainer);
 	margin: 0 auto;
 	padding-top: 60px;
 
 	&_header {
 		text-align: center;
+	}
+
+	&_intro {
+		margin-top: 20px;
+		font-size: 16px;
+		color: var(--purple);
+	}
+
+	&_title {
+		position: relative;
+		margin-top: 30px;
+		margin-bottom: 45px;
+		font-family: aemstel_regular;
+		color: var(--white);
+		font-size: 60px;
+
+		&::after {
+			content: 'Weather App';
+			position: absolute;
+			z-index: -1;
+			left: 50%;
+			color: var(--purple);
+			font-family: aemstel_shadow;
+			text-shadow: var(--yellow) 5px 5px 0;
+    		transform: translateX(-50%);
+		}
 	}
 }

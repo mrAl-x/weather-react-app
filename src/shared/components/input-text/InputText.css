@@ -1,3 +1,11 @@
-.InputText {
+@import 'shared/styles/variables.css';
 
+.inputText {
+	background: none;
+	border: none;
+	font-size: 40px;
+
+	&::placeholder {
+		color: var(--orange);
+	}
 }

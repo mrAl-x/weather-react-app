@@ -5,10 +5,9 @@ import styles from './InputText.css';
 class InputText extends Component {
 	render() {
 		return (
-			<div className={ styles.InputText }>
-				<input type="text" placeholder="Insert city" />
-
-			</div>
+			<input type="text"
+				className={ styles.inputText }
+				placeholder="Insert city"/>
 		);
 	}
 }
