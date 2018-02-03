@@ -1,0 +1,22 @@
+@import 'shared/styles/variables.css';
+
+.WeatherWidget {
+	position: relative;
+	width: 300px;
+	height: 455px;
+	background-color: var(--white);
+	border: 2px solid var(--orange);
+	box-shadow: var(--orange) 12px 0 0;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: -2px;
+		right: -14px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 12px 12px 0;
+		border-color: transparent var(--light-yellow) transparent transparent;
+	}
+}

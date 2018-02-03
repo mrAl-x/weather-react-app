@@ -2,9 +2,18 @@
 @import './shared/styles/fonts.css';
 @import './shared/styles/variables.css';
 
+html {
+	/* This allows to use decimal rem units as pixels (i.e 1.6rem = 16px) */
+	font-size: 62.5%;
+}
+
 body {
 	background-color: var(--light-yellow);
 	font-family: "aemstel_regular", sans-serif;
+}
+
+.mainWrapper {
+	width: var(--fullSizedContainer);
 }
 
 .weather {
@@ -12,17 +21,17 @@ body {
 	margin: 0 auto;
 	padding-top: 60px;
 
-	&_header {
+	.header {
 		text-align: center;
 	}
 
-	&_intro {
+	.intro {
 		margin-top: 20px;
 		font-size: 16px;
 		color: var(--purple);
 	}
 
-	&_title {
+	.title {
 		position: relative;
 		margin-top: 30px;
 		margin-bottom: 45px;
@@ -38,7 +47,11 @@ body {
 			color: var(--purple);
 			font-family: aemstel_shadow;
 			text-shadow: var(--yellow) 5px 5px 0;
-    		transform: translateX(-50%);
+    		transform: translateX(-50%) translateY(-1px);
 		}
 	}
+}
+
+.weatherSection {
+	display: flex;
 }

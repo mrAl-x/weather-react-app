@@ -1,0 +1,40 @@
+@import 'shared/styles/variables.css';
+
+.DayForecast {
+	position: relative;
+	width: 100%;
+
+	.dayWeatherIcon {
+		position: relative;
+		display: block;
+		width: 100px;
+		height: 100px;
+		margin: 35px auto 40px;
+	}
+}
+
+.weatherDetails {
+	display: flex;
+	justify-content: space-between;
+
+	.weatherIcon {
+		width: 36px;
+		height: 36px;
+	}
+
+	.detailsIcon_temperature {
+		position: relative;
+		z-index: 1;
+		color: var(--white);
+		font-size: 6rem;
+
+		.detailsIcon_shadow {
+			position: absolute;
+			left: 0;
+			z-index: -1;
+			color: var(--purple);
+			transform: translateY(-1px);
+			font-family: aemstel_shadow;
+		}
+	}
+}

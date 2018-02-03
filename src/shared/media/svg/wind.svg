@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="38px" viewBox="0 0 37 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>wind icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-679.000000, -474.000000)">
+            <g id="wind-icon" transform="translate(679.000000, 475.000000)">
+                <g id="big-wind" transform="translate(2.872340, 22.304348)">
+                    <rect id="Rectangle-Copy-2" fill="#39285E" x="0" y="0" width="27.1914894" height="1.95652174" rx="0.97826087"></rect>
+                    <path d="M26.7431944,13.6956522 C30.1631908,13.6956522 32.9356456,10.8629688 32.9356456,7.3686767 C32.9356456,5.85263047 32.4137652,4.46112391 31.543545,3.37146751 M27.5482118,1.09467683 C27.2847125,1.05972713 27.0160138,1.04170122 26.7431944,1.04170122 C23.9437704,1.04170122 21.5782104,2.93964843 20.8119021,5.54483859 C20.6420279,6.12235341 20.5507432,6.73462313 20.5507432,7.3686767" id="Oval" stroke="#39285E" stroke-width="1.94999993" stroke-linecap="round" stroke-linejoin="round" transform="translate(26.743194, 7.368677) rotate(-270.000000) translate(-26.743194, -7.368677) "></path>
+                    <ellipse id="Oval-2" fill="#39285E" cx="32.1675896" cy="10.458595" rx="1" ry="1"></ellipse>
+                </g>
+                <rect id="middle-wind" fill="#39285E" x="6.5106383" y="16.4347826" width="19.9148936" height="1.95652174" rx="0.97826087"></rect>
+                <g id="small-wind">
+                    <path d="M28.1754299,10.8882834 C31.1182175,10.8882834 33.5038181,8.45085812 33.5038181,5.44414169 C33.5038181,2.43742526 31.1182175,0 28.1754299,0 C25.7666232,0 23.7311414,1.63311737 23.0717597,3.87479262 C22.925589,4.37172398 22.8470417,4.89856071 22.8470417,5.44414169" id="Oval" stroke="#39285E" stroke-width="1.94999993" stroke-linecap="round" stroke-linejoin="round" transform="translate(28.175430, 5.444142) scale(1, -1) rotate(-270.000000) translate(-28.175430, -5.444142) "></path>
+                    <rect id="Rectangle" fill="#39285E" x="0" y="9.97826087" width="12.8297872" height="1.95652174" rx="0.97826087"></rect>
+                    <rect id="Rectangle-Copy" fill="#39285E" x="16.0851064" y="9.97826087" width="12.8297872" height="1.95652174" rx="0.97826087"></rect>
+                    <ellipse id="Oval-3" fill="#39285E" cx="14.3617021" cy="10.9565217" rx="1" ry="1"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
