@@ -8,24 +8,24 @@ import rainIcon from '../../../media/svg/rain.svg'
 import styles from './DayForecast.css';
 
 const DayForecast = ({ wind, temperature, precipitation }) => (
-	<main className={ styles.DayForecast }>
-		<img src={sunnyIcon} alt="Sunny" className={styles.dayWeatherIcon } />
+	<main className={ styles.dayForecast }>
+		<img src={sunnyIcon} alt="Sunny" className={ styles.dayWeatherIcon } />
 		<div className={ styles.weatherDetails }>
 			<figure>
-				<img src={ windIcon } alt="Wind Speed" className={ styles.weatherIcon } />
-				<figcaption>
+				<img src={ windIcon } alt="Wind Speed" className={ styles.dailyIcon } />
+				<figcaption className={ styles.dailyLabel }>
 					{ `${wind} M/s` }
 				</figcaption>
 			</figure>
-			<span className={ styles.detailsIcon_temperature }>
+			<span className={ styles.weatherIcon_temperature }>
 				{ temperature }
-				<span className={ styles.detailsIcon_shadow }>
+				<span className={ styles.weatherIcon_shadow }>
 					{ temperature }
 				</span>
 			</span>
 			<figure>
-				<img src={ rainIcon } alt="Precipitation" className={ styles.detailsIcon } />
-				<figcaption>
+				<img src={ rainIcon } alt="Precipitation" className={ styles.dailyIcon } />
+				<figcaption className={ styles.dailyLabel }>
 					{ `${precipitation} M/s` }
 				</figcaption>
 			</figure>

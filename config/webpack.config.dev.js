@@ -194,6 +194,7 @@ module.exports = {
                       path: './src',
                     }),
                     require('precss'),
+                    require('postcss-css-reset'),
                   ],
                 },
               },

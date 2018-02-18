@@ -1,6 +1,6 @@
 @import 'shared/styles/variables.css';
 
-.DayForecast {
+.dayForecast {
 	position: relative;
 	width: 100%;
 
@@ -15,20 +15,17 @@
 
 .weatherDetails {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	color: var(--purple);
+	font-size: 1.2rem;
 
-	.weatherIcon {
-		width: 36px;
-		height: 36px;
-	}
-
-	.detailsIcon_temperature {
+	.weatherIcon_temperature {
 		position: relative;
 		z-index: 1;
 		color: var(--white);
 		font-size: 6rem;
 
-		.detailsIcon_shadow {
+		.weatherIcon_shadow {
 			position: absolute;
 			left: 0;
 			z-index: -1;
@@ -37,4 +34,9 @@
 			font-family: aemstel_shadow;
 		}
 	}
+}
+
+.dailyIcon {
+	width: 36px;
+	height: 36px;
 }
