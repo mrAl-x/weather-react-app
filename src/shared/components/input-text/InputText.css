@@ -1,11 +1,35 @@
 @import 'shared/styles/variables.css';
 
 .inputText {
+	max-width: 330px;
+	max-height: 50px;
+	margin-top: 50px;
 	background: none;
 	border: none;
+	border-bottom: 1px solid color(var(--orange) a(30%));
 	font-size: 40px;
+	font-family: aemstel_regular;
+	color: var(--retro-purple);
+
+	&:focus {
+		border-bottom: 1px solid var(--orange);
+	}
 
 	&::placeholder {
-		color: var(--orange);
+		text-shadow: none;
+	}
+
+	@supports(-webkit-text-stroke: 1px var(--orange) or text-stroke: 1px var(--orange)) {
+		color: var(--white);
+		font-family: aemstel_regular;
+		text-stroke: 1px var(--orange);
+		-webkit-text-stroke: 1px var(--orange);
+		-moz-text-stroke: 1px var(--orange);
+		text-shadow: var(--orange) 2px 2px 0, var(--yellow) 4px 4px 0;
+
+		&::placeholder {
+			color: var(--orange);
+			text-shadow: none;
+		}
 	}
 }

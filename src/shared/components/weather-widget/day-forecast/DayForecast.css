@@ -36,6 +36,14 @@
 	}
 }
 
+.dailyDataWrapper {
+	text-align: center;
+}
+
+.dailyLabel {
+	margin-top: 20px;
+}
+
 .dailyIcon {
 	width: 36px;
 	height: 36px;

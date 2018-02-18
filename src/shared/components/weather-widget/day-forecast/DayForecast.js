@@ -1,5 +1,6 @@
 import React from 'react';
 
+// SVGs
 import sunnyIcon from '../../../media/svg/sun.svg'
 import windIcon from '../../../media/svg/wind.svg'
 import rainIcon from '../../../media/svg/rain.svg'
@@ -11,7 +12,7 @@ const DayForecast = ({ wind, temperature, precipitation }) => (
 	<main className={ styles.dayForecast }>
 		<img src={sunnyIcon} alt="Sunny" className={ styles.dayWeatherIcon } />
 		<div className={ styles.weatherDetails }>
-			<figure>
+			<figure className={ styles.dailyDataWrapper }>
 				<img src={ windIcon } alt="Wind Speed" className={ styles.dailyIcon } />
 				<figcaption className={ styles.dailyLabel }>
 					{ `${wind} M/s` }
@@ -23,7 +24,7 @@ const DayForecast = ({ wind, temperature, precipitation }) => (
 					{ temperature }
 				</span>
 			</span>
-			<figure>
+			<figure className={ styles.dailyDataWrapper }>
 				<img src={ rainIcon } alt="Precipitation" className={ styles.dailyIcon } />
 				<figcaption className={ styles.dailyLabel }>
 					{ `${precipitation} M/s` }
