@@ -10,7 +10,7 @@ const Wallpaper = () => (
 	</div>
 );
 
-export const renderWhiteStripes = () => {
+const renderWhiteStripes = () => {
 	return (
 		<div className={ styles.whiteStripesWrapper }>
 			<span className={ styles.whiteStripe } />
@@ -19,7 +19,7 @@ export const renderWhiteStripes = () => {
 	);
 }
 
-export const renderRetroRainbow = () => {
+const renderRetroRainbow = () => {
 	return (
 		<div className={ styles.retroRainbowWrapper }>
 			<span className={ styles.retroStripe } />

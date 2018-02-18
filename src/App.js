@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // Helpers
-import { getWeatherData } from './shared/utils/helpers';
+import { getWeatherData, getGeocode } from './shared/utils/helpers';
 // Components
 import Wallpaper from './shared/components/wallpaper/Wallpaper'
 import InputText from './shared/components/input-text/InputText'
@@ -15,10 +15,12 @@ class App extends Component {
 		this.state = {
 			weather: null,
 		};
+
+		this.inputTimeOut = null;
 	}
 
 	componentWillMount() {
-		getWeatherData().then((result) => this.setState({ weather: result }));
+		getWeatherData('Porto').then((result) => this.setState({ weather: result }));
 	}
 
 	render() {
@@ -41,7 +43,7 @@ class App extends Component {
 						</h1>
 					</header>
 					<main className={ styles.weatherSection }>
-						<InputText />
+						<InputText handleOnChange={ this.updateSearchText } />
 						<WeatherWidget>
 							{this.state.weather && this.state.weather.daily}
 						</WeatherWidget>
@@ -50,6 +52,16 @@ class App extends Component {
 				</div>
 			</div>
 		);
+	}
+
+	updateSearchText = (location) => {
+		clearTimeout(this.inputTimeOut);
+
+		if (location) {
+			this.inputTimeOut = setTimeout(() => {
+				getWeatherData(location).then((result) => this.setState({ weather: result }));
+			}, 500);
+		}
 	}
 }
 
